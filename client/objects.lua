@@ -30,8 +30,8 @@ local function SpawnObject(payload)
     SetCanClimbOnEntity(obj, payload.canClimb)
   end
 
-  if payload.colissions ~= nil then
-    SetEntityCollision(obj, payload.colissions, payload.colissions)
+  if payload.collisions ~= nil then
+    SetEntityCollision(obj, payload.collisions, payload.collisions)
   end
 
   if payload.anim and payload.animSpeed then
